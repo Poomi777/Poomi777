@@ -8,6 +8,7 @@ div{
     height: 400px;
     width: 400px;
     position: relative;
+    margin: auto;
 }
 
 .advert{
@@ -22,17 +23,18 @@ div{
 }
 
 @keyframes rotate {
-    0% {transform: rotate(45deg); background-color: green;}
+    0% {transform: rotate(0deg); background-color: green;}
     25% {transform: rotate(90deg); background-color: blueviolet;}
-    50% {transform: rotate(135deg); background-color: green;}
-    75% {transform: rotate(180deg); background-color: blueviolet;}
-    100% {transform: rotate(225deg); background-color: green;}
+    50% {transform: rotate(180deg); background-color: green;}
+    75% {transform: rotate(270deg); background-color: blueviolet;}
+    100% {transform: rotate(360deg); background-color: green;}
 }
 
 .advert:hover {
     width: 100%;
     animation-name: rotate;
     animation-delay: 3s;
+    animation-duration: 8s;
 }
 
 @keyframes namecolor{
